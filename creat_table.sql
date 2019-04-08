@@ -17,8 +17,21 @@ delete from block_miner_time;
 insert into block_miner_time(block_hash, miner_address, block_time)
 	values('dfe2e70d6c116a541101cecbb256d7402d62125f6ddc9b607d49edc989825c64', 'bb7b8287f3f0a933474a79eae42cbca977791171', '2017-09-06 04:02:15');
     
-select count(*) from block_miner_time;
+select count(block_hash) from block_miner_time;
+select * from block_miner_time where block_hash='e23693bfcb8d9a01df60b9ea4b95fbecce1f9830f5fea0aa30a69cfad3e675cd';
 delete from block_miner_time where block_hash='dfe2e70d6c116a541101cecbb256d7402d62125f6ddc9b607d49edc989825c64';
+
+
+-- ------------------new table for blocks to include height---------------
+create table blockHeight_miner_time
+(block_height int unsigned not null primary key,
+ block_hash char(64) not null,
+ miner_address varchar(40) not null,
+ block_time timestamp not null
+ );
+ 
+ select count(*) from blockHeight_miner_time;
+ delete from blockHeight_miner_time;
 
 -- -----------table for pools-------------
 create table pools
