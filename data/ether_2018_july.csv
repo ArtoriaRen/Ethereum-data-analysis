@@ -1,17 +1,13 @@
-2miners,499
-AntPool,96
-BitClubPool,3228
-BW,3044
-Coinotron_3,1989
-DwarfPool_1,3598
+pool_name,count
+PandaPool\nWaterholePool\nMaxHash\nFirePool \nMinerAllPool \nAntPool \n2miners, 3712
 Ethermine,51786
 EthPool_2,1701
 F2pool_2,27497
-FirePool,727
-MaxHash,72
-MinerAllPool,179
+BitClubPool,3228
 MiningPoolHub,18139
+Coinotron_3,1989
 NanoPool,21329
-PandaPool,1243
+DwarfPool_1,3598
+Other miners, 14406
+BW,3044
 SparkPool,32097
-WaterholePool,896
